@@ -24,13 +24,13 @@
 
 Please note that the blue cable in the screen, are not in use. We just added is, as a spare one.
 
-<h1 align="center">
+<span align="center">
 	<img src="docs/wires_in-screen.jpg" width="30%">
   <img src="docs/screen-pins_in_board.png" width="30%">
   <img src="docs/wireeing.png" width="30%">
-</h1>
-
-The BL Touch are added in the Z_MIN and SERVO-ports. Please see the YouTube-video for more details about that.
+	<br>
+	<p>The BL Touch are added in the Z_MIN and SERVO-ports. Please see the YouTube-video for more details about that.</p>
+</span>
 
 ### Screen Firmware
 1) Download the [firmware](https://github.com/exetico/Marlin/blob/2.0.6.1-BTT-SKR-V1.4-Turbo-Ender5Plus_StockScreen/CR-XABL_Screens_V2Rev2.7z) 
@@ -39,9 +39,9 @@ The BL Touch are added in the Z_MIN and SERVO-ports. Please see the YouTube-vide
 4) Copy the `DWIN_SET`-folder to the SD-card
 5) Place the MicroSD-card in the stock screen, and power it on. Wait for it to be finish, and turn it back off. It will sat "END !" in the first line, after it's done.
 
-<h1 align="center">
+<span align="center">
 	<img src="docs/firmware-flash.png" width="30%">
-</h1>
+</span>
 
 
 <br>
