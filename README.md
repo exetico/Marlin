@@ -16,7 +16,9 @@
 4) Update the [firmware](https://github.com/exetico/Marlin/blob/2.0.6.1-BTT-SKR-V1.4-Turbo-Ender5Plus_StockScreen/CR-XABL_Screens_V2Rev2.7z) of the stock-screen
   - Remember to format the card as FAT32 with 4K clusters (MicroSD - **not** SDHC)
 5) Build the firmware to the motherboard with PlatformIO
-6) Copy the `firmware.bin` to your printer (It's located in `.pio\build\LPC1769`, after you've builded it)
+6) Change whatever you need to change (if you want to do so...)
+7) Copy the `firmware.bin` to your main MicroSD Card. It's located in `.pio\build\LPC1769`, after you've builded it.
+8) Plug the MicroSD-card in your printer, and cross your fingers :-D
 
 <br>
 
