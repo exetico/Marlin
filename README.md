@@ -2,25 +2,46 @@
 
 **The following fork are created with the following configuration**:
 - Ender 5 Plus
-- BIGTREETECH SKR 1.5 Turbo with **TMC2208**-drivers
+- BIGTREETECH SKR 1.4 Turbo with **TMC2208**-drivers
+  - Please note that your should set the drivers to UART (Check the [video](https://www.youtube.com/watch?v=vS8RM2RPe-s))
 - **Stock screen** (Read: **Not** TFT35, as many users use)
+  - [New firmware](https://github.com/exetico/Marlin/blob/2.0.6.1-BTT-SKR-V1.4-Turbo-Ender5Plus_StockScreen/CR-XABL_Screens_V2Rev2.7z) to the screen
 - Mainboard mount plate (Mounted [In center](https://www.thingiverse.com/thing:4543939) or [edge mounted](https://www.thingiverse.com/thing:4051503))
-
 <br>
 
-You'll need to:
+## You'll need to....
 1) Print the adapter-brachet
-2) Replace card, and fix the wirering - We'll recommend [this video](https://www.youtube.com/watch?v=vS8RM2RPe-s)
-  - **Remember** to do the wirering as shown in the "Stock screen-wirering"-section! 
-4) Update the firmware of the TFT Screen
+2) Replace motherboard, and fix the wirering - We'll recommend [this video](https://www.youtube.com/watch?v=vS8RM2RPe-s)
+  - **Remember** to do the wirering as shown in the "**Stock screen-wirering**"-section! 
+4) Update the [firmware](https://github.com/exetico/Marlin/blob/2.0.6.1-BTT-SKR-V1.4-Turbo-Ender5Plus_StockScreen/CR-XABL_Screens_V2Rev2.7z) of the stock-screen
   - Remember to format the card as FAT32 with 4K clusters (MicroSD - **not** SDHC)
-5) Build the firmware with PlatformIO
+5) Build the firmware to the motherboard with PlatformIO
 6) Copy the `firmware.bin` to your printer (It's located in `.pio\build\LPC1769`, after you've builded it)
 
 <br>
 
-# Stock screen-wirering
+### Stock screen-wirering
 
+Please note that the blue cable in the screen, are not in use. We just added is, as a spare one.
+
+<h1 align="center">
+	<img src="docs/wires_in-screen.jpg" width="30%">
+  <img src="docs/screen-pins_in_board.png" width="30%">
+  <img src="docs/wireeing.png" width="30%">
+</h1>
+
+The BL Touch are added in the Z_MIN and SERVO-ports. Please see the YouTube-video for more details about that.
+
+### Screen Firmware
+1) Download the [firmware](https://github.com/exetico/Marlin/blob/2.0.6.1-BTT-SKR-V1.4-Turbo-Ender5Plus_StockScreen/CR-XABL_Screens_V2Rev2.7z) 
+2) Unpack it
+3) Format a MicroSD-card to FAT32 with **4K cluster-size**
+4) Copy the `DWIN_SET`-folder to the SD-card
+5) Place the MicroSD-card in the stock screen, and power it on. Wait for it to be finish, and turn it back off. It will sat "END !" in the first line, after it's done.
+
+<h1 align="center">
+	<img src="docs/firmware-flash.png" width="30%">
+</h1>
 
 
 <br>
