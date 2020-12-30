@@ -1,3 +1,41 @@
+## Firmware for Ender 5 Plus with BIGTREETECH SKR 1.4 Turbo
+
+**The following fork are created with the following configuration**:
+- Ender 5 Plus
+- BIGTREETECH SKR 1.5 Turbo with **TMC2208**-drivers
+- **Stock screen** (Read: **Not** TFT35, as many users use)
+- Mainboard mount plate (Mounted [In center](https://www.thingiverse.com/thing:4543939) or [edge mounted](https://www.thingiverse.com/thing:4051503))
+
+<br>
+
+You'll need to:
+1) Print the adapter-brachet
+2) Replace card, and fix the wirering - We'll recommend [this video](https://www.youtube.com/watch?v=vS8RM2RPe-s)
+  - **Remember** to do the wirering as shown in the "Stock screen-wirering"-section! 
+4) Update the firmware of the TFT Screen
+  - Remember to format the card as FAT32 with 4K clusters (MicroSD - **not** SDHC)
+5) Build the firmware with PlatformIO
+6) Copy the `firmware.bin` to your printer (It's located in `.pio\build\LPC1769`, after you've builded it)
+
+<br>
+
+# Stock screen-wirering
+
+
+
+<br>
+
+We're used a good amount of sources, to guide us through the process and hints
+- [YouTube Video with Board-swap](https://www.youtube.com/watch?v=vS8RM2RPe-s)
+- [Source for Screen Firmware](https://github.com/InsanityAutomation/Marlin/blob/CrealityDwin2.0_Bleeding/CR-XABL_Screens_V2Rev2.7z)
+- [Notes about using the stock screen with SRK - It's 1.3! So just for extra information](https://www.deviousweb.com/2020/05/08/ender-5-plus-skr1-3-and-factory-screen/)
+- [Great guide with LOTS of good tips, content and pictures](https://github.com/GadgetAngel/SKR-V1.4-Turbo-Stepper-Driver-Jumper-Configuration-Manual/tree/master/CURRENT-Manual)
+
+Due to changes in Marlin, we couldn't get the newest repo to work as we wanted.
+<br>
+<hr>
+<br>
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
