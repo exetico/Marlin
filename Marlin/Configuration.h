@@ -104,13 +104,18 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT 0
+
+// Used for SKR14Turbo USB Connection to host-pC
+#define SERIAL_PORT -1
+
+// Used for SKR14Turbo Screen-controls
+#define DGUS_SERIAL_PORT 0
 
 /**
  * Select a secondary serial port on the board to use for communication with the host.
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT_2 -1
+//#define SERIAL_PORT_2 -1
 
 /**
  * This setting determines the communication speed of the printer.
@@ -1331,7 +1336,7 @@
  * Add a bed leveling sub-menu for ABL or MBL.
  * Include a guided procedure if manual probing is enabled.
  */
-#define LCD_BED_LEVELING
+//#define LCD_BED_LEVELING
 
 #if ENABLED(LCD_BED_LEVELING)
   #define MESH_EDIT_Z_STEP  0.025 // (mm) Step size while manually probing Z axis.
@@ -1969,7 +1974,7 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // https://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
 //
 // ReprapWorld Graphical LCD
@@ -2175,7 +2180,7 @@
 // Third-party or vendor-customized controller interfaces.
 // Sources should be installed in 'src/lcd/extensible_ui'.
 //
-//#define EXTENSIBLE_UI
+#define EXTENSIBLE_UI
 
 #if ENABLED(EXTENSIBLE_UI)
   //#define EXTUI_LOCAL_BEEPER // Enables use of local Beeper pin with external display
