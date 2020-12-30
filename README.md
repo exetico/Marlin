@@ -47,14 +47,20 @@ Please note that the blue cable in the screen, are not in use. We just added is,
 
 
 <br>
+<br>
 
-We're used a good amount of sources, to guide us through the process and hints
+## Links
+
+We're used a good amount of sources, to guide us through the process and hints.
+
 - [YouTube Video with Board-swap](https://www.youtube.com/watch?v=vS8RM2RPe-s)
 - [Source for Screen Firmware](https://github.com/InsanityAutomation/Marlin/blob/CrealityDwin2.0_Bleeding/CR-XABL_Screens_V2Rev2.7z)
 - [Notes about using the stock screen with SRK - It's 1.3! So just for extra information](https://www.deviousweb.com/2020/05/08/ender-5-plus-skr1-3-and-factory-screen/)
 - [Great guide with LOTS of good tips, content and pictures](https://github.com/GadgetAngel/SKR-V1.4-Turbo-Stepper-Driver-Jumper-Configuration-Manual/tree/master/CURRENT-Manual)
 
-Due to changes in Marlin, we couldn't get the newest repo to work as we wanted.
+Due to changes in Marlin, we couldn't get the newest repo to work as we wanted, so we're currenlty stock with 2.0.6.1.
+
+
 <br>
 <hr>
 <br>
